@@ -79,7 +79,8 @@ Your overall grade for the course will be determined as follows:
 -   Programming assignments: 40%
 -   Two midterm exams: 40% (20% each)
 -   Final project: 10%
--   Quizzes, Attendance and participation: 10%
+-   Quizzes, Attendance and participation: 5%
+-   Labs: 5%
 
 ### Course website
 
