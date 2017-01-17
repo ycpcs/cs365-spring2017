@@ -20,9 +20,11 @@ Vector Architectures
 
 In a vector architecture, special vector instructions can produce many data values in parallel. For example, consider the following code:
 
-    for (int i = 0; i < 100; i++) {
-        result[i] = a[i] * b[i];
-    }
+```c
+for (int i = 0; i < 100; i++) {
+    result[i] = a[i] * b[i];
+}
+```
 
 On a SISD machine, the instruction in the loop body would need to execute 100 times, in sequence. On a vector machine with a vector-multiply instruction, a single instruction could multiply many/all of the input operands, storing the resulting products in elements of the destination array. Note that it is not necessarily the case that all of the multiplications would happen simultaneously, but they would complete more quickly than if executed sequentially.
 
