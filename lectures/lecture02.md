@@ -116,3 +116,5 @@ A high-performance network technology such as Infiniband can allow much better p
 -   An Infiniband switch can allow about 40 nodes to be connected directly, allowing full bandwidth and minimum latency. Internally, the switch uses *cut-through routing* to ensure that outgoing data is transmitted with minimum delay (as soon as recipient address is decoded), and a crossbar architecture to allow full N-to-N simultaneous communication.
 
 A high-performance network will be substantially more expensive. (An Infiniband switch can cost $40,000!)
+
+> *Update, Jan 2016* &mdash; This no longer appears to be true: Infiniband switches now appear to be available in the low hundreds/thousands of dollars.
