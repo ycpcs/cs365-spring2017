@@ -20,4 +20,6 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Jan 23** &mdash; [Assignment 2](assign/assign02.html) has been posted.  Milestone 1 is due Thursday, Feb 2nd by 11:59 PM.  Milestone 2 is due Tuesday, Feb 28th by 11:59 PM.
+* **Jan 18** &mdash; [Assignment 1](assign/assign01.html) is due Thursday, Jan 26th by 11:59 PM.
 * **Jan 18** &mdash; Welcome back!
