@@ -14,6 +14,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 * [Assignments](assign/index.html)
 * [Labs](labs/index.html)
 * [Resources](resources.html)
+* [Recommended VNC setup](vncSetup.html)
 * [VNC through SSH](vncSshTunnel.html)
 * [Practice Exams](practice/index.html)
 * [Code examples](examples/index.html)
