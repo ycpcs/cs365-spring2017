@@ -164,9 +164,10 @@ Once the program is working well (but not before!), you can consider making the 
 
 ### Small (20x20) test
 
-Here is an automated test you can run.  From your `CS365_Assign02` directory, run the following command:
+Here is an automated test you can run.  From your `CS365_Assign02` directory, run the following commands:
 
     wget http://ycpcs.github.io/cs365-spring2017/assign/runtests.zip
+    unzip runtests.zip
 
 Then, run `make`.  To test the parallel version of your program, run the command
 
