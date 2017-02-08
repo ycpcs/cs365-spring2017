@@ -17,20 +17,20 @@ Feb 1 | MPI Collective Communications | [Lecture 5: MPI Collective Communication
 Feb 6 | MPI Derived Datatypes | [Lecture 6: MPI Derived Datatypes](lectures/lecture06.html), Section 3.5 (p. 116&ndash;119)
 Feb 8 | MPI Performance | Lecture 7: MPI Performance, Section 3.6 (p. 119&ndash;127)
 Feb 13 | MPI Review
-Feb 15 |
+Feb 15 | Work day
 Feb 20 | **Exam 1**
-Feb 22 |
+Feb 22 | Pthreads | [Lecture 8: Introduction to pthreads](lectures/lecture08.html)
 Feb 27 | Winter vacation, no class
 Mar 1 | Winter vacation, no class
-Mar 6 |
-Mar 8 |
-Mar 13 |
-Mar 15 |
-Mar 20 |
-Mar 22 |
-Mar 27 |
-Mar 29 |
-Apr 3 |
+Mar 6 | Mutexes| [Lecture 9: Mutexes](lectures/lecture09.html), Sections 4.1&ndash;4.6
+Mar 8 | Lab activity
+Mar 13 | Condition variables | [Lecture 10: Condition Variables](lectures/lecture10.html), Sections 4.7&ndash;4.8
+Mar 15 | Reader/writer locks | [Lecture 11: Reader/Writer Locks](lectures/lecture11.html), Sections 4.9&ndash;4.11
+Mar 20 | Java Threads, Synchronization | [Lecture 12: Java Threads, Synchronization](lectures/lecture12.html)
+Mar 22 | Fork/Join Parallelism | [Lecture 13: Fork/Join Parallelism](lectures/lecture13.html)<br>Doug Lea, [A Java Fork/Join Framework](http://gee.cs.oswego.edu/dl/papers/fj.pdf)
+Mar 27 | Lock-free data structures | [Lecture 14: Lock-free data structures](lectures/lecture14.html)<br>Maged Michael and Michael Scott, [Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algorithms](http://www.research.ibm.com/people/m/michael/podc-1996.pdf)
+Mar 29 | Sockets | [Lecture 15: Socket programming in C](lectures/lecture15.html)
+Apr 3 | Java Sockets | [Lecture 16: Socket programming in Java](lectures/lecture16.html)
 Apr 5 |
 Apr 10 |
 Apr 12 |
