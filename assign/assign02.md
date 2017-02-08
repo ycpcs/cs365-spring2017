@@ -5,7 +5,10 @@ title: "Assignment 2: Conway's Game of Life"
 
 **Milestone 1**: Due Thursday, Feb 2nd by 11:59 PM
 
-**Milestone 2**: Due Tuesday, Feb 28th by 11:59 PM
+**Milestone 2**:
+
+* In-person demo by Friday, Feb 24th
+* Due Friday, Mar 10th by 11:59 PM
 
 # Conway's Game of Life
 
