@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Feb 13** &mdash; A solution to the first practice exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Feb 13** &mdash; The description of [Assignment 2](assign/assign02.html) has been updated to describe how to run automated tests on the sequential version of the program.
 * **Feb 8** &mdash; The [Schedule](schedule.html) has been updated to add readings.
 * **Feb 8** &mdash; The due date for Milestone 2 of [Assignment 2](assign/assign02.html) has been changed.  There are now two due dates: an in-person demo by **Friday, Feb 24th** and the actual code by **Friday, Mar 10th**.
