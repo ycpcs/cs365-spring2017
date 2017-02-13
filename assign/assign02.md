@@ -10,6 +10,8 @@ title: "Assignment 2: Conway's Game of Life"
 * In-person demo by Friday, Feb 24th
 * Due Friday, Mar 10th by 11:59 PM
 
+*Update 2/13*: Added automated testing instructions for sequential version of the program.
+
 # Conway's Game of Life
 
 Your task is to implement sequential and parallel programs to simulate [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life).
@@ -127,6 +129,13 @@ Here is a transcript showing the expected output when running the sequential pro
 </pre>
 
 Make sure your sequential implementation produces similar output.
+
+*Update 2/13*:  You can run the 20x20 tests (described in the "Testing the parallel version" section below) on your sequential implementation using the following commands:
+
+    wget https://ycpcs.github.io/cs365-spring2017/assign/runtests.zip
+    wget https://ycpcs.github.io/cs365-spring2017/assign/runtests_seq.sh
+    chmod a+x runtests_seq.sh
+    ./runtests_seq
 
 ## Milestone 2: Parallel computation
 
