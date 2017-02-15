@@ -134,6 +134,7 @@ Make sure your sequential implementation produces similar output.
 
     wget https://ycpcs.github.io/cs365-spring2017/assign/runtests.zip
     wget https://ycpcs.github.io/cs365-spring2017/assign/runtests_seq.sh
+    unzip runtests.zip
     chmod a+x runtests_seq.sh
     ./runtests_seq.sh
 
