@@ -12,8 +12,8 @@ These instructions assume you are using your VNC session on the cluster head nod
 Run the following commands in a terminal:
 
 <pre>
-wget http://faculty.ycp.edu/~dhovemey/spring2017/cs365/<i>zipfile</i>
-unzip <i>zipfile</i>
+wget http://faculty.ycp.edu/~dhovemey/spring2017/cs365/wyzlqkjg.zip
+unzip wyzlqkjg.zip
 cd CS365_Exam01
 </pre>
 
