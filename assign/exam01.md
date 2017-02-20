@@ -17,7 +17,7 @@ unzip <i>zipfile</i>
 cd CS365_Exam01
 </pre>
 
-You will be adding your code to the file **something.c**.  Run `make` to compile.  See the printed handout for how to run and test the program.
+You will be adding your code to the file **maxrowcol.c**.  Run `make` to compile.  See the printed handout for how to run and test the program.
 
 ## What information sources you can use
 
