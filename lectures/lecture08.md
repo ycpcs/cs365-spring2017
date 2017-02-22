@@ -78,6 +78,8 @@ Example application: computing the sum of an array of 16 bit integers.
 
 Question: how would you parallelize this computation?
 
+Example pthreads program: [hello\_pthread,c](hello_pthread.c)
+
 Lab 6
 =====
 
