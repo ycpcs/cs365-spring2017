@@ -27,10 +27,11 @@ Note that the `nbody_par` program can take command line arguments:
 
 * The `-t` argument specifies the number of worker threads to create
 * The `-p` argument specifies the number of bodies ("particles") to create
+* The `-f` argument specifies the number of animation frames to display
 
-For example, to run with 8 worker threads and 2000 bodies, the command would be
+For example, to run with 8 worker threads and 2000 bodies, displaying 200 animation frames, the command would be
 
-    ./nbody_par -t 8 -p 2000
+    ./nbody_par -t 8 -p 2000 -f 200
 
 If you want to compile the program using Linux on your own computer, you will to build [libui](https://github.com/andlabs/libui).  If you are using Ubuntu, the following commands should work:
 
@@ -55,6 +56,8 @@ The `nbody_seq` program is a sequential [N-Body simulation](https://en.wikipedia
 
 The program works by calling the `sim_tick` function repeatedly and drawing the positions of the simulated bodies as colored pixels in a GUI window.  You can see the code for the sequential version of the simulation in the `sim_seq.c` source file.
 
+*TODO* &mdash; describe the main computation loop and how it can be parallelized.
+
 Your task is to parallelize the first loop in the `sim_tick` function, which accounts for the majority of the running time of the simulation.  The basic idea is fairly simple: create multiple worker threads in the `sim_create` function, and have each thread handle part of the range of indices of the computaton's (outer) loop when instructed to do so by `sim_tick`.  Note that the `sim_create` function should create as many threads as specified by the `num_threads` field in the `SimulationParams` object passed as a parameter: this will allow you to experiment with running the program using varying numbers of threads.
 
 ## Suggested approach
@@ -69,9 +72,25 @@ If you do decide to use `MTQueue` in your parallel computation, you should
 * add the source file `mtqueue.c` to the `SRCS_COMMON` macro in `Makefile`
 * add `#include "mtqueue.h"` to the source file `sim_par.c`
 
-## Hints
+## Hints and Specifications
 
-Coming soon.
+It is a requirement that your worker threads are long running.  In other words:
+
+* The `sim_create` function should create the worker threads
+* The `sim_destroy` function should cause them to exit, and should wait for them to exit
+* The `sim_tick` function should cause the worker threads to do ranges of iterations of the main computation loop
+
+It is *not* sufficient to have `sim_tick` create the worker threads and wait for them to complete each time it is called.
+
+If you use the `MTQueue` based approach described above (highly recommended), `sim_tick` and the worker threads will need to communicate by passing messages to each other.  You will probably find it useful to define a message data type, e.g., something like the following:
+
+```c
+typedef struct {
+    // ...message fields...
+} Message;
+```
+
+Note that message objects should be dynamically allocated using `malloc`.  In general, it is never a good idea to pass pointers to objects allocated on one thread's stack (i.e., local variables) to another thread.  Don't forget to use `free` to deallocate message objects once they are no longer needed.
 
 # Deliverables
 
@@ -88,3 +107,7 @@ Run the command
     make submit
 
 Type your Marmoset username and password when prompted.
+
+<!-- vim:set wrap: -->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
