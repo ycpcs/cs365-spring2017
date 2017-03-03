@@ -19,7 +19,18 @@ To run the programs:
 
     ./nbody_par
 
+<!--
 *TODO* &mdash; describe the `-t` and `-p` parameters to the parallel version of the program.
+-->
+
+Note that the `nbody_par` program can take command line arguments:
+
+* The `-t` argument specifies the number of worker threads to create
+* The `-p` argument specifies the number of bodies ("particles") to create
+
+For example, to run with 8 worker threads and 2000 bodies, the command would be
+
+    ./nbody_par -t 8 -p 2000
 
 If you want to compile the program using Linux on your own computer, you will to build [libui](https://github.com/andlabs/libui).  If you are using Ubuntu, the following commands should work:
 
