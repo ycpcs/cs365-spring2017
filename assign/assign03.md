@@ -19,6 +19,8 @@ To run the programs:
 
     ./nbody_par
 
+*TODO* &mdash; describe the `-t` and `-p` parameters to the parallel version of the program.
+
 If you want to compile the program using Linux on your own computer, you will to build [libui](https://github.com/andlabs/libui).  If you are using Ubuntu, the following commands should work:
 
     sudo apt-get install libgtk-3-dev cmake
@@ -42,7 +44,7 @@ The `nbody_seq` program is a sequential [N-Body simulation](https://en.wikipedia
 
 The program works by calling the `sim_tick` function repeatedly and drawing the positions of the simulated bodies as colored pixels in a GUI window.  You can see the code for the sequential version of the simulation in the `sim_seq.c` source file.
 
-Your task is to parallelize the first loop in the `sim_tick` function, which accounts for the majority of the running time of the simulation.  Edit the version in the `sim_par.c` source file, which is the one linked into the `sim_par` executable.  The basic idea is fairly simple: create multiple worker threads, and have each thread handle part of the range of indices of the (outer) loop.
+Your task is to parallelize the first loop in the `sim_tick` function, which accounts for the majority of the running time of the simulation.  The basic idea is fairly simple: create multiple worker threads in the `sim_create` function, and have each thread handle part of the range of indices of the computaton's (outer) loop when instructed to do so by `sim_tick`.  Note that the `sim_create` function should create as many threads as specified by the `num_threads` field in the `SimulationParams` object passed as a parameter: this will allow you to experiment with running the program using varying numbers of threads.
 
 ## Suggested approach
 
@@ -54,6 +56,7 @@ If you do decide to use `MTQueue` in your parallel computation, you should
 
 * copy `mtqueue.c` and `mtqueue.h` from the `CS365_Lab08` directory into the `CS365_Assign03` directory
 * add the source file `mtqueue.c` to the `SRCS_COMMON` macro in `Makefile`
+* add `#include "mtqueue.h"` to the source file `sim_par.c`
 
 ## Hints
 
