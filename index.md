@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Mar 6** &mdash; The due date for [Assignment 2](assign/assign02.html), Milestone 2 has been extended to Tuesday, Mar 14th.  As I mentioned in class today, I will be out of town March 8&ndash;10.  The activity for Wednesday, Mar 8th is to start working on [Lab 8](labs/lab08.html).  You will need to read about [condition variables](lectures/lecture10.html).
 * **Feb 13** &mdash; A solution to the first practice exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Feb 13** &mdash; The description of [Assignment 2](assign/assign02.html) has been updated to describe how to run automated tests on the sequential version of the program.
 * **Feb 8** &mdash; The [Schedule](schedule.html) has been updated to add readings.

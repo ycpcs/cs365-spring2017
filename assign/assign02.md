@@ -8,9 +8,11 @@ title: "Assignment 2: Conway's Game of Life"
 **Milestone 2**:
 
 * In-person demo by Friday, Feb 24th
-* Due Friday, Mar 10th by 11:59 PM
+* Due Tuesday, Mar 14th by 11:59 PM
 
 *Update 2/13*: Added automated testing instructions for sequential version of the program.
+
+*Update 3/6*: Due date for Milestone 2 extended to Tuesday, Mar 14th.
 
 # Conway's Game of Life
 
