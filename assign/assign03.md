@@ -3,7 +3,9 @@ layout: default
 title: "Assignment 3: N-Body Simulation"
 ---
 
-*Preliminary assignment description, not finalized yet*
+Due: TBD
+
+*Note that some details are missing at this point: will be updated*
 
 # Getting Started
 
