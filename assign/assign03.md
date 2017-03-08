@@ -21,10 +21,6 @@ To run the programs:
 
     ./nbody_par
 
-<!--
-*TODO* &mdash; describe the `-t` and `-p` parameters to the parallel version of the program.
--->
-
 Note that the `nbody_par` program can take command line arguments:
 
 * The `-t` argument specifies the number of worker threads to create
@@ -58,9 +54,21 @@ The `nbody_seq` program is a sequential [N-Body simulation](https://en.wikipedia
 
 The program works by calling the `sim_tick` function repeatedly and drawing the positions of the simulated bodies as colored pixels in a GUI window.  You can see the code for the sequential version of the simulation in the `sim_seq.c` source file.
 
-*TODO* &mdash; describe the main computation loop and how it can be parallelized.
+Your task is to parallelize the first loop in the `sim_tick` function, which accounts for the majority of the running time of the simulation.  The basic idea is fairly simple: create multiple worker threads in the `sim_create` function, and have each thread handle part of the range of indices of the computaton's (outer) loop when instructed to do so by `sim_tick`.  In other words, each time `sim_tick` is called, each worker thread should execute a loop that looks something like the following:
 
-Your task is to parallelize the first loop in the `sim_tick` function, which accounts for the majority of the running time of the simulation.  The basic idea is fairly simple: create multiple worker threads in the `sim_create` function, and have each thread handle part of the range of indices of the computaton's (outer) loop when instructed to do so by `sim_tick`.  Note that the `sim_create` function should create as many threads as specified by the `num_threads` field in the `SimulationParams` object passed as a parameter: this will allow you to experiment with running the program using varying numbers of threads.
+```c
+for (int i = start_index; i < end_index; i++) {
+    for (int j = 0; j < sim->num_particles; j++) {
+        if (i != j) {
+            particle_compute_attraction(&sim->particles[i], &sim->particles[j]);
+        }
+    }
+}
+```
+
+where `start_index` and `end_index` define a range of indices in the `Simulation`'s `particles` array.
+
+Note that the `sim_create` function should create as many threads as specified by the `num_threads` field in the `SimulationParams` object passed as a parameter: this will allow you to experiment with running the program using varying numbers of threads.
 
 ## Suggested approach
 
