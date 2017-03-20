@@ -3,9 +3,7 @@ layout: default
 title: "Assignment 3: N-Body Simulation"
 ---
 
-Due: TBD
-
-*Note that some details are missing at this point: will be updated*
+Due: **Friday, March 31st** by 11:59 PM
 
 # Getting Started
 
@@ -102,13 +100,38 @@ typedef struct {
 
 Note that message objects should be dynamically allocated using `malloc`.  In general, it is never a good idea to pass pointers to objects allocated on one thread's stack (i.e., local variables) to another thread.  Don't forget to use `free` to deallocate message objects once they are no longer needed.
 
-# Deliverables
+# Experiment
 
-Coming soon.
+You will notice that when the program exits, it prints a message indicating how many animation frames were "missed."  A missed animation frame is when the computation from the previous frame is still running when the timer event for the current frame occurs.
+
+Do some experiments to characterize under what circumstances the parallel version of the program misses animation frames.  Roughly, using varying numbers of threads, how many bodies can be simulated without missing a significant (10 or more) number of frames?
+
+The `-f` option to run a fixed number of animation frames will be useful.
+
+You should run your experiment on one of the compute nodes, rather than on the head node.  You can do this by using X forwarding.  For example, to run on `hitchhiker04`, you would use the command
+
+    ssh -X hitchhiker04
+
+from a terminal in your VNC session, `cd` to the directory with your program in it, and then run the program normally.
+
+Include a report of your experiment, with the relevant data (number of missed frames for various combinations of number of threads and number of bodies.)  The report should be in a text file called `experiment.txt` included with your source code.  (This file will be submitted automatically when you run `make submit`.)
+
+To visualize the load on the CPU cores, you can run the `coremon` program.  Just invoke the command
+
+    coremon &
+
+You can ignore the `Couldn't connect to accessibility bus` message.
 
 # Grading
 
-Coming soon.
+Your grade (max 100 points) will be determined as follows:
+
+* Add fields to `Simulation` to allow communication with worker threads: 10 points
+* Create long-running worker threads: 10 points
+* `sim_tick` notifies worker threads when work is available: 30 points
+* Worker threads do work when available and notify `sim_tick` when finished: 30 points
+* Worker threads shut down when instructed to do so by `sim_destroy`: 10 points
+* Experiment report: 10 points
 
 # Submitting
 
