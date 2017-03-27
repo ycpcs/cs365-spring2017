@@ -19,10 +19,10 @@ Mar 6 | [Lab 7: Mutexes in pthreads](lab07.html) | [CS365\_Lab07.zip](CS365_Lab0
 Mar 8 | [Lab 8: Shared Queue](lab08.html) | [CS365\_Lab08.zip](CS365_Lab08.zip)
 Mar 15 | [Lab 9: Reader/Writer Locks](lab09.html) | [CS365\_Lab09.zip](CS365_Lab09.zip)
 Mar 20 | [Lab 10: Java Producer/Consumer Simulation](lab10.html) | [CS365\_Lab10.zip](CS365_Lab10.zip)
-Mar 26 | [Lab 11: Parallel Sorting Using Fork/Join](lab11.html) | [CS365\_Lab11.zip](CS365_Lab11.zip)
+Mar 22 | [Lab 11: Parallel Sorting Using Fork/Join](lab11.html) | [CS365\_Lab11.zip](CS365_Lab11.zip)
+Mar 27 | [Lab 12: Lock-free random number generator](lab12.html) | [CS365\_Lab12.zip](CS365_Lab12.zip)
 
 <!--
-Apr 7 | [Lab 12: Lock-free random number generator](lab12.html) | [CS365\_Lab12.zip](CS365_Lab12.zip)
 Apr 9 | [Lab 13: Network Arithmetic Server](lab13.html) | [CS365\_Lab13.zip](CS365_Lab13.zip)
 Apr 14 | [Lab 14: Network Arithmetic Server (Java version)](lab14.html) | [CS365\_Lab14.zip](CS365_Lab14.zip) |
 Apr 21 | [Lab 15: CUDA Image Processing](lab15.html) | [CS365\_Lab15.zip](CS365_Lab15.zip) | 
