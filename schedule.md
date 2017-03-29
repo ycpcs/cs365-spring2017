@@ -31,8 +31,8 @@ Mar 22 | Fork/Join Parallelism | [Lecture 13: Fork/Join Parallelism](lectures/le
 Mar 27 | Lock-free data structures | [Lecture 14: Lock-free data structures](lectures/lecture14.html)<br>Maged Michael and Michael Scott, [Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algorithms](http://www.research.ibm.com/people/m/michael/podc-1996.pdf)
 Mar 29 | Sockets | [Lecture 15: Socket programming in C](lectures/lecture15.html)
 Apr 3 | Java Sockets | [Lecture 16: Socket programming in Java](lectures/lecture16.html)
-Apr 5 |
-Apr 10 |
+Apr 5 | GPGPU Computation, CUDA | [Lecture 17: GPGPU Programming, CUDA](lectures/lecture17.html)
+Apr 10 | GPGPU Computation | [Lecture 18: CUDA Threads](lectures/lecture18.html)
 Apr 12 |
 Apr 17 | Spring vacation, no class
 Apr 19 |
