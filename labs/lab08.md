@@ -25,6 +25,10 @@ If **mtqueue\_dequeue** is called when the queue is empty, it should block the c
 
 The **mtqueue\_wait\_until\_empty** function causes the calling thread to wait until the queue is empty.
 
+<div class="callout">
+<b>Note</b>: Do <em>not</em> call <b>mtqueue_wait_until_empty</b> from any of your <b>mtqueue</b> methods.  It is only meant to be used by the test program to determine when the simulation is complete.
+</div>
+
 Hints
 =====
 
