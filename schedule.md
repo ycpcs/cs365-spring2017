@@ -36,7 +36,7 @@ Apr 10 | GPGPU Computation | [Lecture 18: CUDA Threads](lectures/lecture18.html)
 Apr 12 |
 Apr 17 | Spring vacation, no class
 Apr 19 |
-Apr 24 |
+Apr 24 | **Exam 2** covering pthreads
 Apr 26 |
 May 1 |
 May 3 |
