@@ -13,6 +13,12 @@ This code is an Eclipse project, and you can also build and run from the command
 ./run.sh Server2 <i>port</i>
 </pre>
 
+Note that you'll need to make <code>run.sh</code> executable:
+
+<pre>
+chmod a+x run.sh
+</pre>
+
 # Socket programming in Java
 
 Socket programming Java is much easier than in C.
