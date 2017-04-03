@@ -30,7 +30,7 @@ Example programs:
 
 ## Concurrency issues
 
-The concurrency issues with Java sockets are similar as with C sockets.
+The concurrency issues with Java sockets are similar to the ones for programming with C sockets.
 
 One basic issue is that if the server is single-threaded in the obvious way, only one client at a time can connect.  A straightforward solution to this problem is to use threads, such that each client connection is handled by a single thread.
 
