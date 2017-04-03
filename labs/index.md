@@ -23,9 +23,9 @@ Mar 22 | [Lab 11: Parallel Sorting Using Fork/Join](lab11.html) | [CS365\_Lab11.
 Mar 27 | [Lab 12: Lock-free random number generator](lab12.html) | [CS365\_Lab12.zip](CS365_Lab12.zip)
 Mar 29 | [Lab 13: Network Arithmetic Server](lab13.html) | [CS365\_Lab13.zip](CS365_Lab13.zip)
 Apr 3 | [Lab 14: Network Arithmetic Server (Java version)](lab14.html) | [CS365\_Lab14.zip](CS365_Lab14.zip) |
+Apr 5 | [Lab 15: CUDA Image Processing](lab15.html) | [CS365\_Lab15.zip](CS365_Lab15.zip) | 
+Apr 11 | [Lab 16: CUDA Threads](lab16.html) | [CS365\_Lab16.zip](CS365_Lab16.zip) |
 
 <!--
-Apr 21 | [Lab 15: CUDA Image Processing](lab15.html) | [CS365\_Lab15.zip](CS365_Lab15.zip) | 
-Apr 23 | [Lab 16: CUDA Threads](lab16.html) | [CS365\_Lab16.zip](CS365_Lab16.zip) |
 Apr 28 | [Lab 17: Clojure futures](lab17.html) | n/a | 
 -->
