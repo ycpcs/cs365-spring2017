@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Apr 3** &mdash; A CUDA-capable host, `bambleweeny`, has been added to the cluster.  Please email me if you have any issues connecting or have requests for software to be installed.  Note that this machine is running Ubuntu, so programs compiled on the cluster head node may not run.  (I.e., you should ssh to `bambleweeny` and then do your compilation there.)
 * **Mar 29** &mdash; The [Schedule](schedule.html) has been updated.
 * **Mar 20** &mdash; [Assignment 3](assign/assign03.html) is due Friday, Mar 31st by 11:59 PM.
 * **Mar 16** &mdash; Due to the snow and the cluster downtime, the due date for [Assignment 2](assign/assign02.html), Milestone 2, has been extended to Tuesday, Mar 21st by 11:59 PM.
