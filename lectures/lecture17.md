@@ -5,9 +5,9 @@ title: "Lecture 17: GPGPU Programming, CUDA"
 
 Example code: [cudaHello.zip](cudaHello.zip)
 
-Note: CUDA is available by logging into the cluster host **deepthought**:
+Note: CUDA is available by logging into the cluster host **bambleweeny**:
 
-    ssh deepthought
+    ssh bambleweeny
 
 GPU - Graphics Processing Unit
 ==============================
