@@ -33,7 +33,7 @@ Mar 29 | Sockets | [Lecture 15: Socket programming in C](lectures/lecture15.html
 Apr 3 | Java Sockets | [Lecture 16: Socket programming in Java](lectures/lecture16.html)
 Apr 5 | GPGPU Computation, CUDA | [Lecture 17: GPGPU Programming, CUDA](lectures/lecture17.html)
 Apr 10 | GPGPU Computation | [Lecture 18: CUDA Threads](lectures/lecture18.html)
-Apr 12 |
+Apr 12 | Lab day (catch up on your labs!)
 Apr 17 | Spring vacation, no class
 Apr 19 |
 Apr 24 | **Exam 2** covering pthreads
