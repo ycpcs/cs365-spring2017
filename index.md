@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Apr 10** &mdash; A second practice exam has been posted on the [Practice Exams](practice/index.html) page.
  * **Apr 10** &mdash; Wednesday's class will be a lab day.
 * **Apr 7** &mdash; [Assignment 4](assign/assign04.html) and [Assignment 5](assign/assign05.html) have been posted.
 * **Apr 3** &mdash; A CUDA-capable host, `bambleweeny`, has been added to the cluster.  Please email me if you have any issues connecting or have requests for software to be installed.  Note that this machine is running Ubuntu, so programs compiled on the cluster head node may not run.  (I.e., you should ssh to `bambleweeny` and then do your compilation there.)
