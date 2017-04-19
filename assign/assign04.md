@@ -44,17 +44,32 @@ You will make your code changes in `sim_par.cu`.
 
 ## Hints and specifications
 
-Note: these hints are somewhat preliminary and will be updated soon.  However, this is not a complicated assignment, and should be easier than Assignment 3.  There is enough information here at this point that you should be able to get started.
-
 Look at the **TODO** comments in `sim_par.cu`.  They indicate where you will need to add or modify code to execute the simulation on the GPU.
 
 Note that the data representation has changed.  Rather than the main data structure being an array of `Particle` objects, the main data structure is now arrays called `x`, `y`, `dx`, `dy`, `mass`, and `color`.  A single particle is represented by the elements at a common index in these arrays.  See `particle.cu` and `sim_seq.cu` to see how the sequential computation works.
 
 The `SimulationData` struct type is used to group pointers to all of the arrays into a single object.  The parallel computation (in `sim_par.cu`) will have *two* of these: one for the host (CPU), and one for the device (GPU).  Note that you must use `cudaMalloc` to allocate device buffers.
 
+The `cudaMalloc` function is called as
+
+```c
+cudaMalloc((void**) &ptr, numBytes);
+```
+
+where `ptr` is a pointer variable where the address of the allocated device buffer should be stored, and `numBytes` is the number of bytes to allocate.  In the context of the assignment, one of your calls might look something like
+
+```c
+cudaMalloc((void**) &sim->pd_dev.x, sizeof(float) * sim->num_particles);
+```
+
+You will need to use the `cudaMemcpy` function to copy data between the host and device buffers.  Specifically:
+
+* Data used by the kernel function must be copied from the host buffers to the device buffers before the kernel call
+* Data produced by the kernel function must be copied from the device buffers to the host buffers after the kernel call
+
 Your kernel function should take pointers to the 5 arrays `x`, `y`, `dx`, `dy`, and `mass`.  It will also need to know how many particles (bodies) are being simulated.  Your kernel function call should look something like the following:
 
-```cuda
+```c
 kernel<<<grid, THREADS_PER_BLOCK>>>(sim->pd_dev.x,
                                     sim->pd_dev.y,
                                     sim->pd_dev.dx,
@@ -67,11 +82,22 @@ Note that the functions `particle_dist`, `particle_force`, and `particle_compute
 
 # Deliverables
 
-Coming soon.
+There are two deliverables: a report and the code.
+
+The report should be a text file that indicates how many particles (bodies) you were able to simulate without missing significant numbers of animation frames.  (Consider "significant" to mean 5 or more frames.)  The report should *also* estimate how much greater the throughput of your CUDA program is than the threaded program you implemented in [Assignment 3](assign03.html).  Note that the complexity of the computation grows with the *square* of the number of bodies being simulated.
+
+Include the report in a text file called `report.txt` in your assignment submission.
 
 # Grading
 
-Coming soon.
+The grading is broken down as follows:
+
+* `sim_create` (allocate device buffers, etc.): 10%
+* `sim_destroy` (deallocate device buffers): 10%
+* `sim_tick` data transfer: 10%
+* `sim_tick` kernel function call: 10%
+* Kernel function, computation: 50%
+* Report: 10%
 
 # Submitting
 
