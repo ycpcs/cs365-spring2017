@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Apr 19** &mdash; A solution to the second practice exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Apr 19** &mdash; The description of [Assignment 4](assign/assign04.html) has been updated.
 * **Apr 10** &mdash; A second practice exam has been posted on the [Practice Exams](practice/index.html) page.
  * **Apr 10** &mdash; Wednesday's class will be a lab day.
