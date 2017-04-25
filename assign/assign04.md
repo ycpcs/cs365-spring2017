@@ -3,7 +3,9 @@ layout: default
 title: "Assignment 4: N-Body Simulation (GPU)"
 ---
 
-Due: **Wednesday, April 26th** by 11:59 PM
+Due: **Friday, April 28th** by 11:59 PM
+
+*Update 4/25*: Extended the due date; mentioned incorrect comment regarding `cudaMalloc`
 
 # Getting Started
 
@@ -61,6 +63,15 @@ where `ptr` is a pointer variable where the address of the allocated device buff
 ```c
 cudaMalloc((void**) &sim->pd_dev.x, sizeof(float) * sim->num_particles);
 ```
+
+Note that the skeleton code included the following incorrect comment:
+
+```c
+// TODO: allocate device buffers, e.g.
+//    sim->pd_dev.x = cudaMalloc(...)
+```
+
+Make sure you call `cudaMalloc` as described above, *not* as described by this comment.
 
 You will need to use the `cudaMemcpy` function to copy data between the host and device buffers.  Specifically:
 
