@@ -7,6 +7,8 @@ Due: **Friday, April 28th** by 11:59 PM
 
 *Update 4/25*: Extended the due date; mentioned incorrect comment regarding `cudaMalloc`
 
+*Update 4/25*: Mention the possibility of a one-dimensional grid
+
 # Getting Started
 
 Download [CS365\_Assign04.zip](CS365_Assign04.zip). Unzip it on the cluster head node (or your local machine, if you are running Linux and have CUDA and `libui` installed).
@@ -88,6 +90,14 @@ kernel<<<grid, THREADS_PER_BLOCK>>>(sim->pd_dev.x,
                                     sim->pd_dev.mass,
                                     sim->num_particles);
 ```
+
+Note that the `grid` parameter is a variable of type `dim3`.  It is possible to have a one-dimensional grid, e.g.
+
+```c
+dim3 grid(num_particles);
+```
+
+If you use a one-dimensional grid, only `threadIdx.x` (and not `threadIdx.y`) will vary in the calls to your kernel function.
 
 Note that the functions `particle_dist`, `particle_force`, and `particle_compute_attraction` are defined to be available on *both* the CPU and GPU.  So, your kernel and device functions can call these functions as required to do the computation.
 
