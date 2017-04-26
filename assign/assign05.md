@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Assignment 4: Research Project"
+title: "Assignment 5: Research Project"
 ---
 
 Proposal: due **Wednesday, Apr 19th** by 11:59 PM

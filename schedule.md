@@ -37,9 +37,9 @@ Apr 12 | Lab day (catch up on your labs!)
 Apr 17 | Spring vacation, no class
 Apr 19 | Exam review
 Apr 24 | **Exam 2** covering pthreads
-Apr 26 |
-May 1 |
-May 3 |
+Apr 26 | Work day
+May 1 | Work day
+May 3 | Work day
 
 <!--
 Jan 22 | C Review | [Lecture 1: C Pointers and Dynamic Memory Allocation](lectures/lecture01.html)

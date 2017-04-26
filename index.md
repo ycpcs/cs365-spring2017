@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **Apr 26** &mdash; The remaining class days are work days: please come prepared to work on your [project](assign/assign05.html).  Also: I will be accepting resubmissions of [Assignment 2](assign/assign02.html) Milestone 2 and [Assignment 3](assign/assign03.html) for 80% of full credit until the end of day on **Monday, May 8th**.
 * **Apr 25** &mdash; The due date for [Assignment 4](assign/assign04.html) has been extended to Friday, Apr 28th.  Also, the assignment description has been updated to mention an inaccurate code comment regarding `cudaMalloc`.
 * **Apr 19** &mdash; A solution to the second practice exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Apr 19** &mdash; The description of [Assignment 4](assign/assign04.html) has been updated.
