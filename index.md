@@ -21,6 +21,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 
 ## News
 
+* **May 1** &mdash; [Assignment 5](assign/assign05.html) has been updated with information about the expectations for the report and presentation.
 * **Apr 26** &mdash; The remaining class days are work days: please come prepared to work on your [project](assign/assign05.html).  Also: I will be accepting resubmissions of [Assignment 2](assign/assign02.html) Milestone 2 and [Assignment 3](assign/assign03.html) for 80% of full credit until the end of day on **Monday, May 8th**.
 * **Apr 25** &mdash; The due date for [Assignment 4](assign/assign04.html) has been extended to Friday, Apr 28th.  Also, the assignment description has been updated to mention an inaccurate code comment regarding `cudaMalloc`.
 * **Apr 19** &mdash; A solution to the second practice exam has been posted on the [Practice Exams](practice/index.html) page.
@@ -41,3 +42,7 @@ This is the web page for CS 365, Spring 2017 at York College.  All information a
 * **Jan 23** &mdash; [Assignment 2](assign/assign02.html) has been posted.  Milestone 1 is due Thursday, Feb 2nd by 11:59 PM.  Milestone 2 is due Tuesday, Feb 28th by 11:59 PM.
 * **Jan 18** &mdash; [Assignment 1](assign/assign01.html) is due Thursday, Jan 26th by 11:59 PM.
 * **Jan 18** &mdash; Welcome back!
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->

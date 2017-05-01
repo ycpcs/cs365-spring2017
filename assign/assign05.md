@@ -35,9 +35,27 @@ Some Specific Ideas
 
 It is fine for multiple people/groups to work on the same problem.
 
+Expectations for Report and Presentation
+========================================
+
+In your report, you should evaluate the program or algorithm you implemented.  For example, compare its running time to an equivalent sequential implementation, and then determine the parallel speedup.  You might also compare your implementation to a different parallel implementation, or a parallel implementation of a different algorithm solving the same problem.  Provide quantitative results from your experiment(s).  Use plots or charts as apporpriate.  In general, your goal in presenting your evaluation is to provide a sense of what advantages your implementation has over a sequential computation, and under what circumstances it will be have an advantage over sequential computation.
+
+Your presentation should be organized roughly as follows:
+
+* Describe the problem
+* Describe your implementation
+* Present the results of your evaluation
+* Conclusions, future work
+
+Your presentation should be no more than 8 minutes, leaving 2 minutes for Q&amp;A.  You should limit your presentation to at most 4 or 5 slides.
+
 Submitting
 ==========
 
 Upload a zip file containing your code and your report to the Marmoset server as **assign05**:
 
 > <https://cs.ycp.edu/marmoset/>
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
