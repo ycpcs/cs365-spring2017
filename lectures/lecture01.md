@@ -120,7 +120,7 @@ struct Coord {
 ...
 
 struct Coord *c;
-c = malloc(sizeof(Coord));
+c = malloc(sizeof(struct Coord));
 ```
 
 In this example, the variable **c** points to a dynamically-allocated instance of the **Coord** struct.
